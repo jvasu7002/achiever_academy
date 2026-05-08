@@ -1,0 +1,2 @@
+FROM tomcat:10.1-jdk17
+COPY achiever_web.war /usr/local/tomcat/webapps/
