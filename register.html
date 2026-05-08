@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register - Achiever's Academy</title>
+<link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+
+<header class="topbar">
+<h2>Achiever's Academy</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login</a>
+</nav>
+
+</header>
+
+
+<section class="form-box">
+
+<h2>Student Registration</h2>
+
+<form action="Register_servlet" method="post">
+
+<input type="text" name="fullname" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<input type="text" name="mobile" placeholder="Phone Number" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<!-- Class -->
+<label>Select Class</label>
+<select name="className" required>
+<option value="">Select Class</option>
+<option>Class 3</option>
+<option>Class 4</option>
+<option>Class 5</option>
+<option>Class 6</option>
+<option>Class 7</option>
+<option>Class 8</option>
+<option>Class 9</option>
+<option>Class 10</option>
+<option>Class 11</option>
+<option>Class 12</option>
+</select>
+
+
+
+<!-- Subjects -->
+<label style="
+    font-size:22px;
+    font-weight:bold;
+    color:#1e3a8a;
+    display:block;
+    text-align:center;
+    margin:25px 0 18px;
+    letter-spacing:0.5px;">
+    Choose Your Subjects
+</label>
+
+<div style="
+    background:linear-gradient(135deg,#f8fafc,#eef2ff);
+    padding:22px;
+    border-radius:15px;
+    border:1px solid #dbeafe;
+    max-height:320px;
+    overflow-y:auto;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);">
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    transition:0.3s;">
+<input type="checkbox" name="subjects" value="All subjects"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">📘 All subjects (Class 3rd to 8th)</span>
+</div>
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<input type="checkbox" name="subjects" value="Accountancy"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">💼 Accountancy</span>
+</div>
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<input type="checkbox" name="subjects" value="Economics"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">📈 Economics</span>
+</div>
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<input type="checkbox" name="subjects" value="Business Studies"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">🏢 Business Studies</span>
+</div>
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<input type="checkbox" name="subjects" value="Political Science"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">🏛 Political Science</span>
+</div>
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<input type="checkbox" name="subjects" value="Geography"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">🌍 Geography</span>
+</div>
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<input type="checkbox" name="subjects" value="History"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">📜 History</span>
+</div>
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<input type="checkbox" name="subjects" value="English"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">📚 English</span>
+</div>
+
+<div style="
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    background:white;
+    border-radius:12px;
+    border:1px solid #dbeafe;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+<input type="checkbox" name="subjects" value="Sociology"
+style="margin-right:18px; transform:scale(1.4); accent-color:#2563eb;">
+<span style="font-size:17px; font-weight:500;">👥 Sociology</span>
+</div>
+
+</div>
+
+<input type="submit" value="Register">
+
+</form>
+
+<p>Already registered? <a href="login.html"
+style="color:#2563eb;
+font-weight:bold;
+text-decoration:none;
+margin-left:5px;">
+Login here
+</a></p>
+
+</section>
+
+
+<footer>
+<p>© 2025 Achiever's Academy</p>
+</footer>
+
+</body>
+</html>
