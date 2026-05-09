@@ -1,0 +1,431 @@
+/* General page style */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6fb;
+}
+
+/* Top navigation bar */
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.topbar h2{
+margin:0;
+color:#1e3a8a;
+}
+
+/* Navigation */
+
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+/* Login and register buttons */
+
+.btn-login{
+color:#2563eb;
+}
+
+.btn-register{
+background:#2563eb;
+color:white;
+padding:8px 16px;
+border-radius:6px;
+}
+
+/* Hero section */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 60px;
+background:#eef2ff;
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero-text h1{
+font-size:42px;
+color:#1e3a8a;
+}
+
+.hero-text p{
+font-size:18px;
+margin:20px 0;
+}
+
+.cta{
+background:#2563eb;
+color:white;
+padding:12px 22px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.hero-image img{
+width:450px;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* Courses section */
+
+.courses{
+padding:60px;
+text-align:center;
+}
+
+.course-grid{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.card{
+background:white;
+width:260px;
+border-radius:10px;
+box-shadow:0 5px 12px rgba(0,0,0,0.1);
+overflow:hidden;
+text-align:center;
+padding-bottom:20px;
+}
+
+.card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px 10px 5px;
+}
+
+.card p{
+padding:0 10px;
+font-size:14px;
+}
+
+/* Enroll button */
+
+
+.enroll-btn{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:10px 20px;
+margin-top:10px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.enroll-btn:hover{
+background:#1e40af;
+}
+
+/* About page */
+
+.about{
+padding:60px;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.about p{
+font-size:18px;
+line-height:1.6;
+}
+
+/* Contact page */
+
+.contact{
+padding:60px;
+text-align:center;
+}
+
+.contact p{
+font-size:18px;
+margin:10px 0;
+}
+
+/* Login and register form */
+
+.form-box{
+background:white;
+width:350px;
+margin:80px auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 12px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.form-box h2{
+color:#1e3a8a;
+margin-bottom:20px;
+}
+
+.form-box input,
+.form-box select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.form-box input:focus,
+.form-box select:focus{
+outline:none;
+border:1px solid #2563eb;
+box-shadow:0 0 4px rgba(37,99,235,0.4);
+}
+
+.form-box input[type="submit"]{
+background:#2563eb;
+color:white;
+border:none;
+cursor:pointer;
+padding:12px;
+font-weight:bold;
+border-radius:6px;
+}
+
+.form-box input[type="submit"]:hover{
+background:#1e40af;
+transform:scale(1.03);
+}
+
+.form-box a{
+color:#2563eb;
+text-decoration:none;
+font-weight:bold;
+}
+
+.form-box a:hover{
+text-decoration:underline;
+}
+
+/* Testimonials */
+
+.testimonials{
+background:white;
+padding:60px;
+text-align:center;
+}
+
+.testimonial-grid{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.review{
+background:#f4f6fb;
+padding:20px;
+width:250px;
+border-radius:10px;
+}
+
+/* Footer */
+
+footer{
+background:#1f2937;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* Responsive Design */
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text{
+width:100%;
+}
+
+.hero-image img{
+width:100%;
+height:auto;
+}
+
+.course-grid{
+flex-direction:column;
+align-items:center;
+}
+
+.topbar{
+flex-direction:column;
+gap:10px;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+
+#assistant-widget {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .courses,
+    .about,
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .course-grid,
+    .testimonial-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .review {
+        width: 90%;
+    }
+
+    .form-box {
+        width: 90%;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .form-box input,
+    .form-box select {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+
+@media screen and (max-width: 768px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .profile-card,
+    .course-card {
+        width: 100%;
+    }
+}
+
+.subject-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .subject-item {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+
+
+}
+}
